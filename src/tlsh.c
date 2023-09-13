@@ -68,6 +68,7 @@ const char* tlsh_get_hash(Tlsh* tlsh, bool showvers)
         return "";
 }
 
+// Added more functions. There's no (tlsh->impl) check
 // int tlsh_impl_total_diff(TlshImpl *tlsh, TlshImpl *other, bool len_diff);
 int tlsh_total_diff(Tlsh* tlsh, Tlsh *other, bool len_diff)
 {
